@@ -15,7 +15,8 @@ namespace DeveloperSample.Syncing
             Assert.Equal(items.Count, result.Count);
         }
 
-        [Fact(Skip="Not implemented")]
+        //[Fact(Skip="This one was over my head!")]
+        [Fact]
         public void ItemsOnlyInitializeOnce()
         {
             var debug = new SyncDebug();

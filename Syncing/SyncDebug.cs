@@ -14,7 +14,7 @@ namespace DeveloperSample.Syncing
             var bag = new ConcurrentBag<string>();
             Parallel.ForEach(items, async i =>
             {
-                var r = await Task.Run(() => i).ConfigureAwait(false);
+                var r = await Task.Run(() => i).ConfigureAwait(true);
                 bag.Add(r);
             });
             var list = bag.ToList();
